@@ -17,6 +17,8 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
        "io.vavr:vavr:0.10.4",
+       "io.swagger.codegen.v3:swagger-codegen-cli:3.0.29",
+       "org.yaml:snakeyaml:1.29",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
