@@ -1,7 +1,10 @@
 package com.resare.lab;
 
+import io.vavr.collection.List;
+
 public class Hello {
     public static void main(String[] args) {
-         System.out.println("src.main.java.com.resare.lab.Hello, world!");
+        var list = List.of("a", "b");
+        System.out.println("Hello, world!");
     }
 }

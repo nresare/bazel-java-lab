@@ -16,7 +16,7 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "org.immutables.vavr:vavr:0.6.2",
+       "io.vavr:vavr:0.10.4",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
