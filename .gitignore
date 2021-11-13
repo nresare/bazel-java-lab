@@ -1,2 +1,6 @@
 .ijwb/
 .DS_Store
+bazel-bazel-java-lab
+bazel-bin
+bazel-out
+bazel-testlogs
