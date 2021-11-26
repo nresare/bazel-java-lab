@@ -7,5 +7,16 @@ public class Hello {
         var s = List.of("Hello", "world")
                 .foldLeft("", (agg, cur) -> "".equals(agg) ? cur : agg + ", " + cur);
         System.out.println(s);
+        castSyntax("foo");
+    }
+
+    private static void castSyntax(Object o) {
+        if (o instanceof String s) {
+            acceptString(s);
+        }
+    }
+
+    private static void acceptString(String s) {
+        System.out.printf("Got a string: %s%n", s);
     }
 }
