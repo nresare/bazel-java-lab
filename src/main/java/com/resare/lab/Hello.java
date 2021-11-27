@@ -8,6 +8,7 @@ public class Hello {
                 .foldLeft("", (agg, cur) -> "".equals(agg) ? cur : agg + ", " + cur);
         System.out.println(s);
         castSyntax("foo");
+        castSyntax("bar");
     }
 
     private static void castSyntax(Object o) {
