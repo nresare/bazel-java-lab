@@ -1,0 +1,16 @@
+# An example
+
+java_binary(
+    name = "ToolWithFileAccess",
+    srcs = [
+        "ToolWithFileAccess.java",
+    ],
+    data = [
+        ":my_data",
+    ]
+)
+
+filegroup(
+    name = "my_data",
+    srcs = glob(["txts/*.txt"]),
+)
