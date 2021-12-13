@@ -1,4 +1,5 @@
-# An example
+load(":filedep.bzl", "my_function")
+
 
 java_binary(
     name = "ToolWithFileAccess",
@@ -7,6 +8,9 @@ java_binary(
     ],
     data = [
         ":my_data",
+    ],
+    deps = [
+        "@bazel_tools//tools/java/runfiles",
     ]
 )
 
@@ -14,3 +18,4 @@ filegroup(
     name = "my_data",
     srcs = glob(["txts/*.txt"]),
 )
+my_function(":ToolWithFileAccess")
