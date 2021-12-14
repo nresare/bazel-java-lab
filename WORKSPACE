@@ -1,3 +1,4 @@
+workspace(name="bazel-java-lab")
 # The maven setup is copied from https://github.com/bazelbuild/rules_jvm_external/blob/master/README.md
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
@@ -17,6 +18,8 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
        "io.vavr:vavr:0.10.4",
+       "org.apache.logging.log4j:log4j-api:2.16.0",
+       "org.apache.logging.log4j:log4j-core:2.16.0",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
