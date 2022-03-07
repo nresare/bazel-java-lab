@@ -1,12 +1,9 @@
 package com.resare.lab;
 
-import io.vavr.Tuple2;
 import io.vavr.collection.HashMap;
-import io.vavr.collection.Stream;
 import org.junit.jupiter.api.Test;
 
 import java.nio.file.Files;
-import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
