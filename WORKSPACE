@@ -17,6 +17,7 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
        "io.vavr:vavr:0.10.4",
+       "com.google.guava:guava:31.0.1-jre",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
