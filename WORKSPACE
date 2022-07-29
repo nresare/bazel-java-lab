@@ -1,4 +1,5 @@
 # The maven setup is copied from https://github.com/bazelbuild/rules_jvm_external/blob/master/README.md
+# foobar
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
