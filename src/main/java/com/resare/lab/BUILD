@@ -15,8 +15,13 @@ java_junit5_test(
     ]),
     deps = [
         "@maven//:io_vavr_vavr",
+        "@maven//:io_vavr_vavr_jackson",
         "@maven//:com_google_guava_guava",
+        "@maven//:com_fasterxml_jackson_core_jackson_databind",
         ":Hello",
+    ],
+    resources = [
+        "//src/main/resources:all",
     ],
     test_package = "com.resare.lab",
 )
