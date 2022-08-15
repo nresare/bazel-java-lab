@@ -1,18 +1,17 @@
-load("@rules_junit5_external//:junit5.bzl", "java_junit5_test")
-
 java_binary(
     name = "Hello",
     srcs = ["Hello.java"],
     deps = [
-        "@maven//:io_vavr_vavr"
-    ]
+        ":greeter",
+        "@bazel_tools//tools/java/runfiles",
+    ],
 )
 
-java_junit5_test(
-    name = "tests",
-    srcs = glob([
-        "*Test.java",
-    ]),
-    test_package = "com.resare.lab",
+java_library(
+    name = "greeter",
+    srcs = ["Greeter.java"],
+    data = ["//src/main/resources:all"],
+    deps = [
+        "@bazel_tools//tools/java/runfiles",
+    ],
 )
-
